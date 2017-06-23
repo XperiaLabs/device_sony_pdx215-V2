@@ -224,3 +224,7 @@ service fan_control_turn_off /vendor/bin/fan_control 0
     user root
     disabled
     oneshot
+
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
