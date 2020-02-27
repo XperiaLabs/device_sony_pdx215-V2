@@ -60,6 +60,7 @@ BOARD_BOOT_HEADER_VERSION := 3
 BOARD_KERNEL_CMDLINE := \
     console=ttyMSM0,115200n8 \
     androidboot.hardware=qcom \
+    androidboot.init_fatal_reboot_target=recovery \
     androidboot.console=ttyMSM0 \
     androidboot.memcg=1 \
     kpti=off \
