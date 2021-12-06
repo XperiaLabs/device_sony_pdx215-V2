@@ -435,7 +435,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <route type="mix" sink="quad mic"
                        sources="Built-In Mic Bottom,Built-In Mic Top,BT SCO Headset Mic,Wired Headset Mic" />
                 <route type="mix" sink="voip_tx"
-                       sources="Built-In Mic Bottom,Built-In Mic Top,BT SCO Headset Mic,USB Device In,USB Headset In,Wired Headset Mic" />
+                       sources="Built-In Mic Bottom,Built-In Mic Top,BT SCO Headset Mic,USB Device In,USB Headset In,Wired Headset Mic,Telephony Rx" />
                 <route type="mix" sink="record_24"
                        sources="Built-In Mic Bottom,Built-In Mic Top,Wired Headset Mic,A2DP In" />
                 <route type="mix" sink="mmap_no_irq_in"
