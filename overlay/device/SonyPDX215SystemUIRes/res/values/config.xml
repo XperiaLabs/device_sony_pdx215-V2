@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Location of physical charger port -->
+    <dimen name="physical_charger_port_location_normalized_x">0.5</dimen>
+    <dimen name="physical_charger_port_location_normalized_y">1</dimen>
+</resources>
