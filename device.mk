@@ -30,7 +30,9 @@ $(call inherit-product, vendor/sony/sagami/common/common-vendor.mk)
 $(call inherit-product, vendor/sony/sagami/pdx215/pdx215-vendor.mk)
 
 # VNDK
-PRODUCT_SHIPPING_API_LEVEL := 30
+BOARD_API_LEVEL := 30
+BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
+PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
