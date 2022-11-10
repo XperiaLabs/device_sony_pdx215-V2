@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- packages to exclude from camera protection -->
+    <string translatable="false" name="config_cameraProtectionExcludedPackages">co.aospa.sense</string>
+
+    <!-- The properties of the face auth camera -->
+    <integer-array name="config_face_auth_props">
+        <item>320</item> <!-- sensorLocationX -->
+        <item>@null</item> <!-- sensorLocationY -->
+        <item>40</item> <!--sensorRadius -->
+    </integer-array>
+
     <bool name="config_show_touch_sensitivity">true</bool>
 </resources>
