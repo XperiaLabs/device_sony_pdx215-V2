@@ -197,7 +197,6 @@ vendor/lib/libSNPE.so
 vendor/lib/libaudiokeymgr.so
 vendor/lib/libaudiosnpewrapper.so
 vendor/lib/libc++_shared.so
-vendor/lib/libdapparamstorage.so
 vendor/lib/libiVptApi.so
 vendor/lib/libiVptHkiDec.so
 vendor/lib/libiVptLibC.so
@@ -214,10 +213,8 @@ vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libznrwrapper.so
 vendor/lib64/libaudiokeymgr.so
-vendor/lib64/libdapparamstorage.so
 vendor/lib64/libiVptApi.so
 vendor/lib64/libiVptHkiDec.so
 vendor/lib64/libiVptLibC.so
@@ -229,16 +226,10 @@ vendor/lib64/soundfx/libbundlewrapper1.so
 vendor/lib64/soundfx/libbundlewrapper2.so
 vendor/lib64/soundfx/libbundlewrapper3.so
 vendor/lib64/soundfx/libbundlewrapper4.so
-vendor/lib64/soundfx/libdlbvol.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/soundfx/libswvqe.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
 # Audio FX Modules (PDX215)
 vendor/etc/zoom_noise_reduction/znr_Front_44k.tbl
