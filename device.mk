@@ -60,7 +60,8 @@ PRODUCT_PACKAGES += \
     SonySagamiSettingsResCommon \
     SonySagamiSystemUIResCommon \
     SonySagamiTelephonyResCommon \
-    WifiResCommon
+    WifiResCommon \
+    NfcResTarget
 
 # RRO Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
