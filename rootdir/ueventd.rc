@@ -505,3 +505,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Fingerprint sensor device
 /dev/esfp0 0660 system system
+
+# Charger
+/sys/class/qcom-battery                                 wireless_boost_en               0644    system  systems
