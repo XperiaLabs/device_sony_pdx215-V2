@@ -16,12 +16,29 @@
 */
 -->
 <resources>
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">16dp</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">5dp</dimen>
+
+    <!-- Margin on the left side of the carrier text on Keyguard -->
+    <dimen name="keyguard_carrier_text_margin">25dp</dimen>
+
+    <!-- Margin on the right side of the system icon group on Keyguard. -->
+    <dimen name="system_icons_keyguard_padding_end">8dp</dimen>
+
+    <!-- the padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">0px</dimen>
+
+    <!-- Height of the status bar header bar when on Keyguard -->
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height_default</dimen>
+
     <!-- The maximum offset in either direction that elements are moved vertically to prevent
          burn-in on status bar and navigation bar. -->
     <dimen name="vertical_max_shift">1.0dp</dimen>
 
     <!-- The maximum offset in either direction that elements are moved horizontally to prevent
          burn-in on status bar and navigation bar. -->
-    <dimen name="horizontal_max_shift">4.0dp</dimen>
-
+    <dimen name="horizontal_max_shift">2.0dp</dimen>
 </resources>
