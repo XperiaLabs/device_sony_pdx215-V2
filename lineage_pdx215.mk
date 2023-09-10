@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Project Matrixx stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -34,17 +34,17 @@ TARGET_SCREEN_WIDTH := 1644
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_BOOTANIMATION_HALF_RES := true
 
-# Evolution-X Flags
-TARGET_USES_BLUR := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BUILD_APERTURE_CAMERA := false
+# Matrixx-Specific Flags
+TARGET_ENABLE_BLUR := true
 
-# Un|Officialify
-EVO_BUILD_TYPE := UNOFFICIAL
+# Maintainer Info
+MATRIXX_MAINTAINER :=
+
+# GMS
+WITH_GAPPS := true
 
 # Device Identifiers
-PRODUCT_NAME := evolution_pdx215
+PRODUCT_NAME := lineage_pdx215
 PRODUCT_DEVICE := pdx215
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony

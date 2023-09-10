@@ -1,4 +1,5 @@
 /*
+ * Copyright (C) 2023 XperiaLabs Project
  * Copyright (C) 2023 Paranoid Android
  *
  * SPDX-License-Identifier: Apache-2.0
@@ -9,6 +10,8 @@
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+
+#include <sys/sysinfo.h>
 
 /*
  * SetProperty does not allow updating read only properties and as a result
@@ -26,6 +29,16 @@ void OverrideProperty(const char* name, const char* value) {
     }
 }
 
+void property_override(char const prop[], char const value[]) {
+    prop_info* pi;
+
+    pi = (prop_info*)__system_property_find(prop);
+    if (pi)
+        __system_property_update(pi, value, strlen(value));
+    else
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+}
+
 /*
  * Only for read-only properties. Properties that can be wrote to more
  * than once should be set in a typical init script (e.g. init.oplus.hw.rc)
@@ -33,4 +46,5 @@ void OverrideProperty(const char* name, const char* value) {
  */
 void vendor_load_properties() {
     OverrideProperty("ro.boot.hardware.sku", "pdx215");
+    property_override("ro.matrixx.chipset", "Snapdragon® 888");
 }

@@ -39,9 +39,6 @@ AB_OTA_PARTITIONS += \
     vendor_dlkm \
     vendor_boot
 
-# APEX
-OVERRIDE_TARGET_FLATTEN_APEX := true
-
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
@@ -192,7 +189,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/filesystem/config.fs
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/evolution/config/device_framework_matrix.xml
+    vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 
