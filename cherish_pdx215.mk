@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common Cherish OS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -34,17 +34,25 @@ TARGET_SCREEN_WIDTH := 1644
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_BOOTANIMATION_HALF_RES := true
 
-# Evolution-X Flags
-TARGET_USES_BLUR := true
+# Cherish OS Flags
+EXTRA_UDFPS_ANIMATIONS := false
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_SUPPORTS_TOUCHGESTURES := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
-# Un|Officialify
-EVO_BUILD_TYPE := UNOFFICIAL
+# Maintainer Info
+CHERISH_BUILD_TYPE := UNOFFICIAL
+
+# GMS
+CHERISH_VANILLA := true
+TARGET_USES_MINI_GAPPS := false
+TARGET_USES_PICO_GAPPS := false
 
 # Device Identifiers
-PRODUCT_NAME := evolution_pdx215
+PRODUCT_NAME := cherish_pdx215
 PRODUCT_DEVICE := pdx215
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony

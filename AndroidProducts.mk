@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_pdx215.mk
+    $(LOCAL_DIR)/cherish_pdx215.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_pdx215-user \
-    evolution_pdx215-userdebug \
-    evolution_pdx215-eng
+    cherish_pdx215-user \
+    cherish_pdx215-userdebug \
+    cherish_pdx215-eng
     
