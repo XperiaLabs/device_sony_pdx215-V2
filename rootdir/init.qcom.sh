@@ -1,6 +1,6 @@
 #! /vendor/bin/sh
 
-# Copyright (c) 2009-2016, The Linux Foundation. All rights reserved.
+# Copyright (c) 2009-2023, The Linux Foundation. All rights reserved.
 # Copyright (C) 2018 Sony Mobile Communications Inc#
 #
 # Redistribution and use in source and binary forms, with or without

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -30,19 +30,6 @@ on property:ro.vendor.ltalabel.model=XQ-BC52
 
 on property:ro.vendor.ltalabel.model=XQ-BC42
     setprop ro.vendor.product.rf.id PDX215-J2
-    setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
-
-on property:ro.vendor.ltalabel.model=XQ-BQ72
-    setprop ro.vendor.product.rf.id PDX214-C2
-
-on property:ro.vendor.ltalabel.model=XQ-BQ62
-    setprop ro.vendor.product.rf.id PDX214-A2US
-
-on property:ro.vendor.ltalabel.model=XQ-BQ52
-    setprop ro.vendor.product.rf.id PDX214-A2
-
-on property:ro.vendor.ltalabel.model=XQ-BQ42
-    setprop ro.vendor.product.rf.id PDX214-J2
     setprop persist.vendor.nfc.config_file_name "libnfc-nxp-typef.conf"
 
 # USB config, refer to init.sony.usb.rc
