@@ -455,6 +455,11 @@ PRODUCT_PACKAGES += \
     vendor.semc.hardware.display@2.3.vendor \
     vendor.semc.hardware.display@2.4.vendor
 
+# Sony Charger Interface
+PRODUCT_PACKAGES += \
+    vendor.sony.charger \
+    vendor.sony.charger-service \
+
 # Shim
 PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor \
