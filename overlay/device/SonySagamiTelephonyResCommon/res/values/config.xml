@@ -42,4 +42,6 @@
 
     <!-- The package name for the platform number verification supplier app. -->
     <string name="platform_number_verification_package">com.google.android.gms</string>
+    
+    <string name="apn_source_service">com.google.android.carrier/.ApnSourceService</string>
 </resources>
