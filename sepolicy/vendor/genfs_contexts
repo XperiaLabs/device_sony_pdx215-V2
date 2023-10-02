@@ -66,6 +66,10 @@ genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:som
 genfscon sysfs /devices/platform/soc/soc:qcom,spcom/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys2/wakeup u:object_r:sysfs_wakeup:s0
 
+# Suspend
+genfscon sysfs /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/subsys9/wakeup/wakeup42          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /sys/devices/platform/soc/aab0000.qcom,venus/subsys10/wakeup/wakeup47          u:object_r:sysfs_wakeup:s0
+
 # Leds
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d000/leds u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d300/leds u:object_r:sysfs_leds:s0
