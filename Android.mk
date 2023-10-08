@@ -32,6 +32,14 @@ $(DSP_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT)
 
+PROTOBUF_SYMLINKS := $(TARGET_OUT_VENDOR)/lib64
+$(PROTOBUF_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "libprotobuf link: $@"
+	@mkdir -p $@
+	$(hide) ln -sf /vendor/lib64/libprotobuf-cpp-full-3.9.1.so $@/libprotobuf-cpp-lite-3.9.1.so
+
+ALL_DEFAULT_INSTALLED_MODULES += $(PROTOBUF_SYMLINKS)
+
 ACDBDATA_SYMLINKS := $(TARGET_OUT_ODM)/etc/acdbdata
 $(ACDBDATA_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating acdbdata symlinks: $@"
