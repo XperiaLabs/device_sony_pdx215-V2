@@ -411,7 +411,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
+    vendor.qti.hardware.perf@2.2.vendor \
+    libgrpc++_unsecure.vendor
 
 # QMI
 PRODUCT_PACKAGES += \
