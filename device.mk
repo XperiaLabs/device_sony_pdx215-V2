@@ -255,7 +255,8 @@ PRODUCT_PACKAGES += \
     fstab.default.vendor_ramdisk \
     init.sony-device-common.rc \
     init.sony-platform.rc \
-    init.sony.rc
+    init.sony.rc \
+    init.pdx215.rc
 
 # Dex to make OTA go faster
 PRODUCT_VENDOR_PROPERTIES += \
