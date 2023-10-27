@@ -72,11 +72,11 @@ function blob_fixup() {
     vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so)
         "${PATCHELF}" --replace-needed "android.hardware.light-V1-ndk_platform.so" "android.hardware.light-V1-ndk.so" "${2}"
         ;;
-    vendor/lib64/vendor.somc.hardware.camera.*.so)
+    vendor/lib64/vendor.somc.hardware.camera.* | vendor/bin/hw/vendor.somc.camera.*.so)
         "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
-        ;;
-    vendor/bin/vendor.somc.camera.*.so)
-        "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+        "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}" 
+        "${PATCHELF}" --remove-needed "libbinder.so" "${2}"
+        "${PATCHELF}" --add-needed "libbinder-v32.so" "${2}"
         ;;
     esac
 }
