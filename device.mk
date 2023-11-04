@@ -579,9 +579,14 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-# Hardware_Sony Packages
-PRODUCT_PACKAGES += \
-    XperiaParts
+# Xperia Modules
+include hardware/sony/XperiaModules.mk
+
+# Xperia Modules - Flags
+TARGET_SUPPORTS_CREATOR_MODE := true
+TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
+TARGET_SUPPORTS_SOUND_ENHANCEMENT := true
+TARGET_SUPPORTS_BATTERY_CARE := true
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
