@@ -29,9 +29,6 @@ $(call inherit-product, vendor/sony/sagami/common/common-vendor.mk)
 # Inherit pdx215 vendor stuff
 $(call inherit-product, vendor/sony/sagami/pdx215/pdx215-vendor.mk)
 
-# Inherit from sony extra
-$(call inherit-product, vendor/sony/extra-sagami/extra.mk)
-
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -585,15 +582,25 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-# Xperia Modules
+# Xperia Modules | Xperia Extras
 include hardware/sony/XperiaModules.mk
+include vendor/sony/extra/Sagami/extra.mk
 
 # Xperia Modules - Flags
 TARGET_SUPPORTS_CREATOR_MODE := true
 TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
-TARGET_SUPPORTS_SOUND_ENHANCEMENT := true
 TARGET_SUPPORTS_BATTERY_CARE := true
 TARGET_SUPPORTS_EUICC := false
+
+# Xperia Extras - Flags
+TARGET_SHIPS_SONY_FRAMEWORK := true
+TARGET_SHIPS_SONY_CAMERA := true
+TARGET_SHIPS_SONY_APPS := true
+TARGET_SUPPORTS_GAME_CONTROLLERS := true
+
+# Xperia Modules | Xperia Extras - Shared Flags (hardware_sony & vendor_sony_extra)
+TARGET_SUPPORTS_SOUND_ENHANCEMENT := true
+TARGET_SHIPS_SOUND_ENHANCEMENT := false
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
