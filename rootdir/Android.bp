@@ -32,6 +32,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.pdx215.rc",
+    src: "init.pdx215.rc",
+    sub_dir: "init",
+    device_specific: true,
+}
+
+prebuilt_etc {
     name: "init.qcom.rc",
     src: "init.qcom.rc",
     sub_dir: "init/hw",
