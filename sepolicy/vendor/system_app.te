@@ -3,7 +3,7 @@ allow system_app zygote:unix_stream_socket getopt;
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
 
-# FIXME: They need to be fixed
+# Battery Care
 allow system_app hal_somc_charger_hwservice:hwservice_manager find;
 allow system_app hal_somc_charger_daemon:binder call;
 
@@ -11,6 +11,13 @@ allow system_app hal_disp_hwservice:hwservice_manager find;
 
 allow system_app hal_miscta_service:service_manager find;
 binder_call(system_app, hal_disp_default)
+
+allow system_app proc_pagetypeinfo:file read;
+
+allow system_app hal_audio_default:binder call;
+allow system_app hal_nfc_default:binder call;
+allow system_app hal_power_default:binder call;
+allow system_app hal_health_default:binder call;
 
 # Battery Health
 allow system_app sysfs_battery_supply:dir { search };
