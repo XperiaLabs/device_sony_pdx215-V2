@@ -37,9 +37,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Matrixx-Specific Flags
 TARGET_ENABLE_BLUR := true
 
-# Maintainer Info
-MATRIXX_MAINTAINER :=
-
 # GMS
 WITH_GAPPS := true
 

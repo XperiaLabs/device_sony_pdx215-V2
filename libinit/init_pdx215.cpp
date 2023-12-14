@@ -47,4 +47,7 @@ void property_override(char const prop[], char const value[]) {
 void vendor_load_properties() {
     OverrideProperty("ro.boot.hardware.sku", "pdx215");
     property_override("ro.matrixx.chipset", "Snapdragon® 888");
+    property_override("ro.matrixx.battery", "4500 mAh");
+    property_override("ro.matrixx.display_resolution", "1644 x 3840");
+    property_override("ro.matrixx.maintainer", "");
 }
