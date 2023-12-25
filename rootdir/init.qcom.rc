@@ -901,7 +901,7 @@ service vendor.qti.hardware.display.allocator /vendor/bin/hw/vendor.qti.hardware
     group graphics drmrpc
     capabilities SYS_NICE
     onrestart restart surfaceflinger
-    task_profiles ServiceCapacityLow
+    task_profiles ProcessCapacityHigh HighPerformance
 
 #Set gpu available frequencies property
 on property:vendor.gpu.available_frequencies=*
