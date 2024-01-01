@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Pixel Experience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,6 +28,10 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 IS_PHONE := true
 TARGET_BUILD_WITH_LTO := true
 
+# Pixel Experience Flags
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_AOSP_RECOVERY := true
+
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 3840
 TARGET_SCREEN_WIDTH := 1644
@@ -35,7 +39,7 @@ TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_BOOTANIMATION_HALF_RES := true
 
 # Device Identifiers
-PRODUCT_NAME := lineage_pdx215
+PRODUCT_NAME := aosp_pdx215
 PRODUCT_DEVICE := pdx215
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
