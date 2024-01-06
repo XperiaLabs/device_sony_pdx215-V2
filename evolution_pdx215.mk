@@ -26,7 +26,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Environment Flags
 IS_PHONE := true
-TARGET_BUILD_WITH_LTO := true
+TARGET_BUILD_WITH_LTO := false
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 3840
