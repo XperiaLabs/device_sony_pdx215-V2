@@ -6,6 +6,38 @@
             <instance>default</instance>
         </interface>
     </hal>
+  <hal format="aidl">
+    <name>vendor.qti.hardware.power.powermodule</name>
+    <version>1</version>
+    <interface>
+      <name>IPowerModule</name>
+      <instance>default</instance>
+    </interface>
+  </hal>
+    <hal format="aidl">
+        <name>vendor.qti.hardware.perf2</name>
+        <version>1</version>
+        <interface>
+            <name>IPerf</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.qti.memory.pasrmanager</name>
+        <version>1</version>
+        <interface>
+            <name>IPasrManager</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.qti.qspmhal</name>
+        <version>1</version>
+        <interface>
+            <name>IQspmhal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl">
        <name>vendor.semc.hardware.secd</name>
        <version>1.1</version>
@@ -231,27 +263,10 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.perf</name>
-        <version>2.0-3</version>
-        <interface>
-            <name>IPerf</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.servicetracker</name>
-        <version>1.0-2</version>
+        <version>1.2</version>
         <interface>
             <name>IServicetracker</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.pasrmanager</name>
-        <version>1.0-1</version>
-        <interface>
-            <name>IPasrManager</name>
-            <instance>pasrhal</instance>
             <instance>default</instance>
         </interface>
     </hal>

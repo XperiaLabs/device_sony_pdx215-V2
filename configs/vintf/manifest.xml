@@ -372,16 +372,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.qspmhal</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQspmhal</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IQspmhal/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.qconfig</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IQConfig/default</fqname>
@@ -413,16 +403,5 @@
         <transport>hwbinder</transport>
         <fqname>@2.0::IFactory/default</fqname>
         <fqname>@2.0::IIop/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.perf</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.2::IPerf/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.pasrmanager</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::IPasrManager/pasrhal</fqname>
-        <fqname>@1.1::IPasrManager/default</fqname>
     </hal>
 </manifest>

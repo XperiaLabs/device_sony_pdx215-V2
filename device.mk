@@ -32,6 +32,12 @@ $(call inherit-product, vendor/sony/sagami/common/common-vendor.mk)
 # Inherit pdx215 vendor stuff
 $(call inherit-product, vendor/sony/sagami/pdx215/pdx215-vendor.mk)
 
+# Include qcom perfd stuff
+$(call inherit-product, vendor/sony/sagami/common/perf-vendor/common-perf-vendor.mk)
+
+# Inherit boost framework stuff
+$(call inherit-product, vendor/sony/sagami/common/perf-system/common-perf-system.mk)
+
 # VNDK
 BOARD_API_LEVEL := 30
 BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
