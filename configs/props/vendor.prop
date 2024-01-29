@@ -231,18 +231,8 @@ ro.hardware.keystore_desede=true
 debug.stagefright.omx_default_rank=0
 debug.stagefright.ccodec=4
 
-# PASR
-vendor.power.pasr.enabled=true
-vendor.pasr.activemode.enabled=true
-
 # Multi-gen LRU
 persist.device_config.mglru_native.lru_gen_config=all
-
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf.scroll_opt=true
-ro.vendor.qspm.enable=true
-ro.vendor.perf-hal.ver=2.2
 
 # Radio
 ro.telephony.default_network=33,33
