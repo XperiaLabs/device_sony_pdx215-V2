@@ -2779,6 +2779,9 @@ vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 vendor/lib64/vendor.somc.hardware.swiqi@1.0-impl.so
 vendor/lib64/vendor.somc.hardware.swiqi@1.0.so
 
+# Media (Codec2) - from Sony/pdx234/pdx234:13/TKQ1.221114.001/1:user/release-keys
+vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy|5db9fe8570186062e390742f81737cf650e83c90
+
 # Modem
 vendor/bin/mlog_qmi_service
 vendor/etc/init/mlog_qmi_service.rc
