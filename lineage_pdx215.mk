@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common RisingOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from device.mk
@@ -33,6 +33,16 @@ TARGET_SCREEN_HEIGHT := 3840
 TARGET_SCREEN_WIDTH := 1644
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_BOOTANIMATION_HALF_RES := true
+
+# RisingOS Specific Flags
+TARGET_HAS_UDFPS := false
+TARGET_ENABLE_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Gapps Config
+WITH_GMS := true
+TARGET_CORE_GMS := false
+TARGET_CORE_GMS_EXTRAS := false
 
 # Device Identifiers
 PRODUCT_NAME := lineage_pdx215
