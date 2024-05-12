@@ -534,10 +534,6 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.sony
-
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -583,7 +579,8 @@ include hardware/sony/XperiaModules.mk
 include vendor/sony/extra/Sagami/extra.mk
 
 # Xperia Modules - Flags
-TARGET_SUPPORTS_CREATOR_MODE := true
+TARGET_SHIPS_XPERIA_SETTINGS_MENU := true
+TARGET_SUPPORTS_IMAGE_ENHANCEMENT := true
 TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
 TARGET_SUPPORTS_HIGH_POLLING_RATE := true
 TARGET_SUPPORTS_BATTERY_CARE := true
@@ -594,6 +591,7 @@ TARGET_SHIPS_SONY_FRAMEWORK := true
 TARGET_SHIPS_SONY_CAMERA := true
 TARGET_SHIPS_SONY_APPS := true
 TARGET_SUPPORTS_GAME_CONTROLLERS := true
+TARGET_SUPPORTS_XPERIA_STREAM := true
 
 # Xperia Modules | Xperia Extras - Shared Flags (hardware_sony & vendor_sony_extra)
 TARGET_SUPPORTS_SOUND_ENHANCEMENT := true
