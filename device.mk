@@ -592,6 +592,7 @@ include vendor/sony/extra/Sagami/extra.mk
 # Xperia Modules - Flags
 TARGET_SUPPORTS_CREATOR_MODE := true
 TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
+TARGET_SUPPORTS_HIGH_POLLING_RATE := true
 TARGET_SUPPORTS_BATTERY_CARE := true
 TARGET_SUPPORTS_EUICC := false
 
