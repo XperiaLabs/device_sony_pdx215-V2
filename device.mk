@@ -53,7 +53,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     SonyPDX215SystemUIRes \
-    SonyPDX215FrameworksRes \
     SonySagamiFrameworksResCommon \
     SonySagamiSettingsProviderOverlayCommon \
     SonySagamiSettingsResCommon \
