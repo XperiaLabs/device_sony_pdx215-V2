@@ -269,9 +269,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 
-PRODUCT_SYSTEM_PROPERTIES += \
-    dalvik.vm.dex2oat-filter=everything \
-    dalvik.vm.image-dex2oat-filter=everything
+PRODUCT_SYSTEM_PROPERTIES += dalvik.vm.dex2oat-filter=everything
 
 # Display
 PRODUCT_PACKAGES += \
