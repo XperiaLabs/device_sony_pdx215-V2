@@ -16,20 +16,37 @@
 */
 -->
 <resources>
-    <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">16dp</dimen>
-
-    <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">5dp</dimen>
-
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">25dp</dimen>
+
+    <!-- paddings for container with status icons and battery -->
+    <!-- padding start is a bit smaller than end to account for status icon margin-->
+    <dimen name="status_bar_icons_padding_start">3dp</dimen>
+
+    <dimen name="status_bar_icons_padding_end">4dp</dimen>
+    <dimen name="status_bar_icons_padding_bottom">0dp</dimen>
+    <dimen name="status_bar_icons_padding_top">0dp</dimen>
+
+    <!-- gap on either side of status bar notification icons -->
+    <dimen name="status_bar_icon_horizontal_margin">0sp</dimen>
+
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">8dp</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">4dp</dimen>
 
     <!-- Margin on the right side of the system icon group on Keyguard. -->
     <dimen name="system_icons_keyguard_padding_end">8dp</dimen>
 
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">0px</dimen>
+    <dimen name="status_bar_padding_top">0dp</dimen>
+
+    <!-- the radius of the overflow dot in the status bar -->
+    <dimen name="overflow_dot_radius">2sp</dimen>
+
+    <!-- the padding between dots in the icon overflow -->
+    <dimen name="overflow_icon_dot_padding">3sp</dimen>
 
     <!-- Height of the status bar header bar when on Keyguard -->
     <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height_default</dimen>
