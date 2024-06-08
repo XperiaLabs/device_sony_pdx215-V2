@@ -569,10 +569,11 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf
 
 # Xperia Modules | Xperia Extras
-include hardware/sony/XperiaModules.mk
-include vendor/sony/extra/Sagami/extra.mk
+$(call inherit-product, hardware/sony/XperiaModules.mk)
+$(call inherit-product, vendor/sony/extra/Sagami/extra.mk)
 
 # Xperia Modules - Flags
+TARGET_SHIPS_XPERIA_SETTINGS := false
 TARGET_SHIPS_XPERIA_SETTINGS_MENU := true
 TARGET_SUPPORTS_IMAGE_ENHANCEMENT := true
 TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
@@ -588,6 +589,7 @@ TARGET_SUPPORTS_GAME_CONTROLLERS := true
 TARGET_SUPPORTS_XPERIA_STREAM := true
 
 # Xperia Modules | Xperia Extras - Shared Flags (hardware_sony & vendor_sony_extra)
+TARGET_SUPPORTS_SOUND_ENHANCEMENT_DTS := false
 TARGET_SUPPORTS_SOUND_ENHANCEMENT := true
 TARGET_SHIPS_SOUND_ENHANCEMENT := true
 
