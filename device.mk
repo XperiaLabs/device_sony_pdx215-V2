@@ -231,6 +231,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
     android.hardware.camera.common@1.0.vendor \
+    libcamera_metadata.vendor \
+    libexif.vendor \
+    libutilscallstack.vendor \
+    libyuv.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 # Common Init Scripts
@@ -456,9 +460,12 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
+    libsqlite.vendor \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
@@ -577,6 +584,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
+    libpng.vendor \
     libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
