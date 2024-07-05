@@ -316,8 +316,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.sony \
-    android.hardware.health-service.sony_recovery
+    android.hardware.health@2.1.vendor \
+    android.hardware.health-service.qti
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -342,6 +342,7 @@ PRODUCT_PACKAGES += \
     liboffloadhal
 
 # Kernel
+PRODUCT_ENABLE_UFFD_GC := false
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Keymaster
@@ -482,7 +483,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors-service.multihal \
+    android.hardware.sensors@2.0-service.multihal \
     libsensorndkbridge
 
 # Soong Namespaces
