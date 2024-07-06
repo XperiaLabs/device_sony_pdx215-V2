@@ -431,12 +431,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.1.vendor \
     android.hardware.media.c2@1.2.vendor
 
-# Enable Codec 2.0
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.media.codec2=2 \
-    debug.stagefright.ccodec=4 \
-    debug.stagefright.omx_default_rank=512
-
 # Transcoding related property.
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.transcoding.codec_max_operating_rate_720P=480 \
