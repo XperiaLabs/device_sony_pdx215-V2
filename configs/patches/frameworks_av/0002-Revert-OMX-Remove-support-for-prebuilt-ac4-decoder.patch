@@ -1,0 +1,25 @@
+From e3090300c2b7d566163eb6454c41a43406f8fbcb Mon Sep 17 00:00:00 2001
+From: ahnet-69 <syedmusicrealise@gmail.com>
+Date: Sat, 6 Jul 2024 18:07:37 +0000
+Subject: [PATCH] Revert "OMX: Remove support for prebuilt ac4 decoder"
+
+This reverts commit 5c96feb9629b96a6d86728c54fdc012ed27c76de.
+---
+ media/libstagefright/omx/SoftOMXPlugin.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/media/libstagefright/omx/SoftOMXPlugin.cpp b/media/libstagefright/omx/SoftOMXPlugin.cpp
+index 6258ee08d7..25b36cb7b6 100644
+--- a/media/libstagefright/omx/SoftOMXPlugin.cpp
++++ b/media/libstagefright/omx/SoftOMXPlugin.cpp
+@@ -64,6 +64,7 @@ static const struct {
+     { "OMX.dolby.ac3.decoder", "ddpdec", "audio_decoder.ac3" },
+     { "OMX.dolby.eac3-joc.decoder", "ddpdec", "audio_decoder.eac3_joc" },
+     { "OMX.dolby.eac3.decoder", "ddpdec", "audio_decoder.eac3" },
++    { "OMX.dolby.ac4.decoder", "ac4dec", "audio_decoder.ac4" },
+ };
+ 
+ static const size_t kNumComponents =
+-- 
+2.43.0
+
