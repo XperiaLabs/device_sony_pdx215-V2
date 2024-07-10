@@ -599,7 +599,7 @@ $(call inherit-product, hardware/sony/XperiaModules.mk)
 $(call inherit-product, vendor/sony/extra/Sagami/extra.mk)
 
 # Xperia Modules - Flags
-TARGET_SHIPS_XPERIA_SETTINGS_MENU := true
+TARGET_SHIPS_XPERIA_SETTINGS := true
 TARGET_SUPPORTS_IMAGE_ENHANCEMENT := true
 TARGET_SUPPORTS_BATTERY_CARE := true
 TARGET_SUPPORTS_HIGH_POLLING_RATE := true
