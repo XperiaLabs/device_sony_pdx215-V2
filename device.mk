@@ -602,7 +602,6 @@ $(call inherit-product, vendor/sony/extra/Sagami/extra.mk)
 TARGET_SHIPS_XPERIA_SETTINGS_MENU := true
 TARGET_SUPPORTS_IMAGE_ENHANCEMENT := true
 TARGET_SUPPORTS_BATTERY_CARE := true
-TARGET_SUPPORTS_HIGH_REFRESH_RATE := true
 TARGET_SUPPORTS_HIGH_POLLING_RATE := true
 
 # Xperia Extras - Flags
