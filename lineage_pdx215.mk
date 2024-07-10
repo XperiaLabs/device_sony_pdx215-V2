@@ -43,6 +43,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GMS := true
 TARGET_CORE_GMS := false
 TARGET_CORE_GMS_EXTRAS := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 
 # Device Identifiers
 PRODUCT_NAME := lineage_pdx215
