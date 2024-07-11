@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!-- Copyright (c) 2016-2021, The Linux Foundation. All rights reserved
+<!-- Copyright (c) 2016-2024, The Linux Foundation. All rights reserved
      Not a Contribution.
 -->
 <!-- Copyright (C) 2015 The Android Open Source Project
@@ -97,7 +97,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <defaultOutputDevice>Speaker</defaultOutputDevice>
             <mixPorts>
                 <mixPort name="primary output" role="source" flags="AUDIO_OUTPUT_FLAG_FAST|AUDIO_OUTPUT_FLAG_PRIMARY">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                    <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
                 <mixPort name="raw" role="source"
@@ -111,7 +111,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 </mixPort>
                 <mixPort name="deep_buffer" role="source"
                         flags="AUDIO_OUTPUT_FLAG_DEEP_BUFFER">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                    <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
                 <mixPort name="mmap_no_irq_out" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_MMAP_NOIRQ">
@@ -435,7 +435,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <route type="mix" sink="quad mic"
                        sources="Built-In Mic Bottom,Built-In Mic Top,BT SCO Headset Mic,Wired Headset Mic" />
                 <route type="mix" sink="voip_tx"
-                       sources="Built-In Mic Bottom,Built-In Mic Top,BT SCO Headset Mic,USB Device In,USB Headset In,Wired Headset Mic" />
+                       sources="Built-In Mic Bottom,Built-In Mic Top,BT SCO Headset Mic,USB Device In,USB Headset In,Wired Headset Mic,Telephony Rx" />
                 <route type="mix" sink="record_24"
                        sources="Built-In Mic Bottom,Built-In Mic Top,Wired Headset Mic,A2DP In" />
                 <route type="mix" sink="mmap_no_irq_in"
