@@ -447,10 +447,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor \
     libgrpc++_unsecure.vendor
 
-# PowerShare
-PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.sony
-
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
